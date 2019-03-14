@@ -1,0 +1,567 @@
+body{
+	margin: 0px;
+	font-family: "Helvetica";
+	background-color: #F4F4F4;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header{
+	font-size: 17pt;
+	color: #FFFFFF;
+	letter-spacing: 4px;
+	text-align: center;
+	line-height: 30pt;
+}
+
+#index-header { padding: 70px 10px 140px; background-color: #F2634E; }
+#projects-header { padding: 70px 10px 60px; background-color: #42D329; }
+
+.title{
+	background-color: #FFFFFF;
+	border: 0px solid #FFFFFF;
+	border-radius: 10pt;
+	font-size: 46pt;
+	font-weight: bold;
+	color: #F2634E;
+	letter-spacing: 7px;
+	width: 465px;
+	line-height: 53pt;
+	padding: 3pt 0 0;
+}
+
+#index-title { color: #F2634E; }
+#projects-title { color: #42D329; }
+
+#profile{
+	width: 180px;
+	height: 180px;
+	border: 10pt solid #FFFFFF;
+	border-radius: 100%;
+	position: absolute;
+	top: 212px;
+	left: 0;
+	right: 0;
+	box-shadow:  0 0 29px 0 rgba(0,0,0,0.12);
+	background-color: #FFFFFF;
+}
+
+#profile-img{
+	width: 180px;
+	height: 180px;
+}
+
+.grid-layout {
+  	display: grid;
+  	grid-template-columns: auto auto auto auto;
+  	grid-template-rows: auto auto auto auto auto;
+  	background-color: #F4F4F4;
+  	grid-gap: 15pt;
+  	font-size: 14pt;
+	color: #282828;
+	line-height: 20pt;
+}
+
+#index-layout { padding: 145px 40px 90px; }
+#projects-layout {
+	grid-template-columns: 22% 22% 22% 22%;
+	padding: 70px 15pt 10px;
+	justify-content: center;
+	text-align: center;
+}
+
+.white-bg{
+	background-color: #FFFFFF;
+	border: 0px solid #FFFFFF;
+	border-radius: 10pt;
+	box-shadow:  0 0 29px 0 rgba(0,0,0,0.12);
+}
+
+.white-bg:hover {
+	box-shadow:  0 0 29px 0 rgba(0,0,0,0.28);
+}
+
+.item-title {
+	margin: 20pt auto 15pt;
+	border-radius: 5pt;
+	border: 0px solid;
+	font-size: 17pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	line-height: 27pt;
+	text-align: center;
+}
+
+.item-bold {
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.item-small {
+	font-size: 11.5pt;
+	font-weight: lighter;
+}
+
+#contacts {
+	grid-area: 1/1/span 1/span 2 ;
+}
+
+	#contacts-title {
+		background-color: #0AA6B7;
+		border-color: #0AA6B7;
+		width: 130px;
+	}
+
+	#contacts-grid {
+  		display: grid;
+  		grid-template-columns: 110px 322px;
+  		grid-template-rows:  auto auto auto auto ;
+  		padding: 0 15pt 15pt;
+  		grid-gap: 5px;
+  		width: 435px;
+	}
+
+	.contacts-bold {
+		color: #0AA6B7;
+	}
+
+#education {
+	grid-area: 1/3/span 1/span 2 ;
+}
+
+	#education-title {
+		background-color: #21439C;
+		border-color: #21439C;
+		width: 140px;
+	}
+	#education-grid {
+  		display: grid;
+  		grid-template-columns: 150px 342px;
+  		grid-template-rows:  auto auto;
+  		padding: 0 15pt 15pt;
+  		grid-gap: 5px;
+  		width: 490px;
+	}
+	.education-bold {
+		color: #21439C;
+	}
+
+#skills {
+	grid-area: 2/1/span 2/span 3 ;
+}
+
+	#skills-title {
+		background-color: #F9AC01;
+		border-color: #F9AC01;
+		width: 95px;
+	}
+	.skills-bold {
+		color: #F9AC01;
+	}
+	#skills-grid1 {
+  		display: grid;
+  		grid-template-columns: auto auto;
+  		grid-template-rows: auto;
+  		padding: 0 15pt 20pt;
+  		grid-gap: 20px;
+	}
+	.skills-grid2 {
+  		display: grid;
+  		grid-template-columns: 103px 0px auto auto auto auto auto auto auto auto auto auto;
+  		grid-gap: 7pt 0;
+	}
+	#skills-grid2-1 {
+  		grid-template-rows: auto auto auto auto auto;
+  		padding: 10pt 0 10pt 15pt;
+	}
+	#skills-grid2-2 {
+  		grid-template-rows: auto;
+  		padding: 10pt 0 0 15pt;
+	}
+	#skills-grid2-3 {
+		grid-template-columns: 158px 0px auto auto auto auto auto auto auto auto auto auto;
+  		grid-template-rows: auto auto auto auto;
+  		padding: 10pt 0 10pt 15pt;
+	}
+	#skills-grid2-4 {
+		grid-template-columns: 158px 0px auto auto auto auto auto auto auto auto auto auto;
+  		grid-template-rows: auto auto;
+  		padding: 10pt 0 0 15pt;
+	}
+	.skills-orangebar { background-color: #F9AC01; }
+	.skills-graybar {
+		background-color: #EFEFEF;
+		border: 0px solid #EFEFEF;
+		border-radius: 0 10pt 10pt 0;
+	}
+	#skills-Csharp1 { grid-area: 1/3/span 1/span 5 ; }
+	#skills-Csharp2 { grid-area: 1/8/span 1/span 5 ; }
+	#skills-HTML1 { grid-area: 2/3/span 1/span 4 ; }
+	#skills-HTML2 { grid-area: 2/7/span 1/span 6 ; }
+	#skills-CSS1 { grid-area: 3/3/span 1/span 4 ; }
+	#skills-CSS2 { grid-area: 3/7/span 1/span 6 ; }
+	#skills-Javascript1 { grid-area: 4/3/span 1/span 3 ; }
+	#skills-Javascript2 { grid-area: 4/6/span 1/span 7 ; }
+	#skills-Python1 { grid-area: 5/3/span 1/span 3 ; }
+	#skills-Python2 { grid-area: 5/6/span 1/span 7 ; }
+	#skills-arduino1 { grid-area: 1/3/span 1/span 6 ; }
+	#skills-arduino2 { grid-area: 1/9/span 1/span 4 ; }
+	#skills-Illustrator1 { grid-area: 1/3/span 1/span 6 ; }
+	#skills-Illustrator2 { grid-area: 1/9/span 1/span 4 ; }
+	#skills-Animate1 { grid-area: 2/3/span 1/span 5 ; }
+	#skills-Animate2 { grid-area: 2/8/span 1/span 5 ; }
+	#skills-XD1 { grid-area: 3/3/span 1/span 4 ; }
+	#skills-XD2 { grid-area: 3/7/span 1/span 6 ; }
+	#skills-Unity1 { grid-area: 4/3/span 1/span 3 ; }
+	#skills-Unity2 { grid-area: 4/6/span 1/span 7 ; }
+	#skills-Design1 { grid-area: 1/3/span 1/span 6 ; }
+	#skills-Design2 { grid-area: 1/9/span 1/span 4 ; }
+	#skills-Creativity1 { grid-area: 2/3/span 1/span 5 ; }
+	#skills-Creativity2 { grid-area: 2/8/span 1/span 5 ; }
+
+#languages {
+	grid-area: 2/4/span 1/span 1 ;
+}
+
+	#languages-title {
+		background-color: #D60055;
+		border-color: #D60055;
+		width: 157px;
+	}
+
+	.languages-bold {
+		color: #D60055;
+	}
+
+	#languages-grid {
+		display: grid;
+		padding: 0 15pt 20pt;
+		grid-template-columns: 135px 0px auto auto auto auto auto auto auto auto auto auto;
+  		grid-template-rows: auto auto;
+  		grid-gap: 7pt 0;
+	}
+
+	.languages-pinkbar { background-color: #D60055; }
+	.languages-graybar {
+		background-color: #EFEFEF;
+		border: 0px solid #EFEFEF;
+		border-radius: 0 10pt 10pt 0;
+	}
+	#languages-Thai1 {
+		grid-area: 1/3/span 1/span 10 ;
+		border: 0px solid #D60055;
+		border-radius: 0 10pt 10pt 0;
+	}
+	#languages-English1 {grid-area: 2/3/span 1/span 6 ; }
+	#languages-English2 {grid-area: 2/9/span 1/span 4 ; }
+
+
+#hobbies {
+	grid-area: 3/4/span 1/span 1 ;
+	padding: 0 15pt 15pt;
+}
+
+	#hobbies-title {
+		background-color: #1DC869;
+		border-color: #1DC869;
+		width: 120px;
+	}
+	.hobbies-bold {
+		color: #1DC869;
+		text-align: center;
+	}
+
+#achievements {
+	grid-area: 4/1/span 2/span 2 ;
+	padding: 0 15pt 15pt;
+}
+
+	#achievements-title {
+		background-color: #00ACD8;
+		border-color: #00ACD8;
+		width: 190px;
+	}
+	.achievements-bold {
+		color: #00ACD8;
+	}
+	#achievements-content {
+		width: 460px;
+	}
+	#achievements-ul1 {
+		margin: 0;
+		padding: 10pt 0 10pt 30pt;
+	}
+	#achievements-ul2 {
+		margin: 0;
+		padding: 10pt 0 0 30pt;
+	}
+
+#interests {
+	grid-area: 4/3/span 1/span 2 ;
+	padding: 0 15pt 20pt
+}
+
+	#interests-title {
+		background-color: #935200;
+		border-color: #935200;
+		width: 130px;
+	}
+	.interests-bold {
+		color: #935200;
+	}
+	#interests-grid {
+		display: grid;
+		grid-template-columns: 335px 218px;
+  		grid-template-rows: auto;
+  		grid-gap: 0;
+  		justify-content: center;
+	}
+
+
+#links {
+	grid-area: 5/3/span 1/span 2 ;
+	display: grid;
+	grid-template-columns: auto auto;
+  	grid-template-rows: auto;
+  	grid-gap: 15pt;
+  	padding: 0;
+  	height: 172px;
+}
+
+
+
+a{
+	text-decoration: none;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+  	justify-content: center;
+  	font-size: 17pt;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 10pt;
+}
+
+#projects{
+	grid-area: 1/1/span 1/span 1 ;
+  	padding: 20pt;
+}
+
+	.projects-button{
+		border: 0px solid #42D329;
+		background-color: #42D329;
+	}	
+
+	.projects-button:hover{
+		font-size: 20pt;
+		background-color: #5B5B5B;
+		transition-duration: 200ms;
+		transition-timing-function: ease-out;
+	}
+
+#facebook-youtube{
+	grid-area: 1/2/span 1/span 1 ;
+	display: flex;
+	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  	padding: 20pt;
+}
+	.facebook-button{
+		border: 0px solid #3A5998;
+		background-color: #3A5998;
+		margin: 0 20pt 0 0;
+	}
+	.facebook-button:hover{
+		font-size: 20pt;
+		background-color: #5B5B5B;
+		transition-duration: 200ms;
+		transition-timing-function: ease-out;
+	}
+	.youtube-button{
+		border: 0px solid #FF0000;
+		background-color: #FF0000;
+		margin: 0;
+	}
+	.youtube-button:hover{
+		font-size: 20pt;
+		background-color: #5B5B5B;
+		transition-duration: 200ms;
+		transition-timing-function: ease-out;
+	}
+
+#end {
+	background-color: #323232;
+	padding: 20px 15pt 25px;
+	line-height: 30pt;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////////// Responsive //////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1184px) {
+	#grid-layout {
+	  	grid-template-columns: auto auto auto auto;
+	  	grid-template-rows: auto auto auto auto auto auto auto;
+	}
+	#contacts {
+		grid-area: 1/1/span 1/span 4 ;
+	}
+	#education {
+		grid-area: 2/1/span 1/span 4 ;
+	}
+	#skills {
+		grid-area: 3/1/span 1/span 4 ;
+	}
+	#languages {
+		grid-area: 4/1/span 1/span 2 ;
+	}
+	#hobbies {
+		grid-area: 4/3/span 1/span 2 ;
+	}
+	#achievements {
+		grid-area: 5/1/span 1/span 4 ;
+	}
+	#interests {
+		grid-area: 6/1/span 1/span 4 ;
+		padding: 0 15pt 15pt
+	}
+	#links {
+		grid-area: 7/1/span 1/span 4 ;
+	}
+}
+
+@media only screen and (max-width: 666px){
+	#grid-layout {
+	  	grid-template-columns: auto auto auto auto;
+	  	grid-template-rows: auto auto auto auto auto auto 265px auto;
+  		padding: 145px 20px 90px;
+	}
+	#skills-grid1 {
+  		grid-template-columns: auto;
+  		grid-template-rows: auto auto;
+  	}
+ 	#languages {
+		grid-area: 4/1/span 1/span 4 ;
+	}
+	#hobbies {
+		grid-area: 5/1/span 1/span 4 ;
+	}
+	#achievements {
+		grid-area: 6/1/span 1/span 4 ;
+	}
+	#interests {
+		grid-area: 7/1/span 1/span 4 ;
+	}
+	#interests-grid {
+		display: grid;
+		grid-template-columns: 300px;
+  		grid-template-rows: auto auto;
+  		grid-gap: 0;
+  		text-align: center;
+  		justify-content: center;
+	}
+	#links {
+		grid-area: 8/1/span 1/span 4 ;
+		grid-template-columns: auto;
+  		grid-template-rows: 155px 155px;
+  		height: auto;
+	}
+	#projects{
+		grid-area: 1/1/span 1/span 1 ;
+	}
+	#facebook-youtube{
+		grid-area: 2/1/span 1/span 1 ;
+	}
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////////// Projects //////////////////////////////////////////////////////////////////////////////*/
+.projects-layout2 {
+	grid-template-columns: auto auto;
+  	grid-template-rows: auto auto;
+  	grid-gap: 20px;
+  	background-color: #FFFFFF;
+  	padding: 10pt 0 0 0;
+}
+
+#projects-layout3 {
+	grid-template-columns: auto auto auto auto;
+  	grid-template-rows: auto;
+}
+
+.projects-layout2 img {
+	width: 100%;
+	height: auto;
+	border: 0px solid #FFFFFF;
+	border-radius: 10pt;
+}
+
+#shelfofyou {
+	grid-area: 1/1/span 1/span 2 ;
+	padding: 0 25pt 20pt;
+}
+	#shelfofyou-title {
+		background-color: #88A1C6;
+		border-color: #88A1C6;
+		width: 220px;
+		padding: 3pt 0 0;
+	}
+	.shelfofyou-bold {
+		color: #88A1C6;
+		padding: 20pt 0 3pt;
+	}
+
+#woobin {
+	grid-area: 1/3/span 1/span 2 ;
+	padding: 0 25pt 20pt;
+}
+	#woobin-title {
+		background-color: #545454;
+		border-color: #545454;
+		width: 145px;
+		padding: 3pt 0 0;
+	}
+	.woobin-bold {
+		color: #545454;
+		padding: 20pt 0 3pt;
+	}	
+
+#eateregg {
+	grid-area: 2/1/span 1/span 4 ;
+	padding: 0 25pt 20pt;
+}
+	#eateregg-title {
+		background-color: #F46567;
+		border-color: #F46567;
+		width: 185px;
+		padding: 3pt 0 0;
+	}
+	.eateregg-bold {
+		color: #F46567;
+		padding: 20pt 0 3pt;
+	}	
+
+@media only screen and (max-width: 750px){
+	#shelfofyou {
+		grid-area: 1/1/span 1/span 4 ;
+	}
+	#woobin {
+		grid-area: 2/1/span 1/span 4 ;
+	}
+	#eateregg {
+		grid-area: 3/1/span 1/span 4 ;
+	}
+	#projects-layout3 {
+		grid-template-columns: auto auto;
+  		grid-template-rows: auto auto;
+	}
+}
+
